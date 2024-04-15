@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript array methods</h1>
+    <p id="demo"></p>
+
+    <script>
+
+        const fruits = ['guava','orange','banana','mango','apple'];
+        const flowers = [ 'lotus','rose','daisy']
+
+        //at method
+        document.getElementById("demo").innerHTML = fruits.at(0);
+
+        //join method
+        document.getElementById("demo").innerHTML = fruits.join("*");
+
+        //includes method
+        document.getElementById("demo").innerHTML = fruits.includes("cherry");
+
+        //concat method
+        document.getElementById("demo").innerHTML = fruits.concat(flowers);
+
+        //indexOf method
+        document.getElementById("demo").innerHTML = fruits.indexOf("mango");
+
+        //slice method
+        document.getElementById("demo").innerHTML = fruits.slice(4);
+
+         //length property
+         document.getElementById("demo").innerHTML = fruits.length;
+
+        //toString method
+        fruits.toString();
+
+        //push method
+        fruits.push("kiwi");
+
+        //pop method
+        fruits.pop();
+
+        //shift method
+        fruits.shift();
+
+        //unshift method
+        fruits.unshift("cherry");
+
+        //copywithin method
+        fruits.copyWithin(1,0);
+
+        //splice method
+        fruits.splice(2,0,"lemon","kiwi");
+
+        //reverse method
+        fruits.reverse();
+
+        //sort method 
+        fruits.sort();
+
+        document.getElementById("demo").innerHTML = fruits;
+
+    </script>
+
+</body>
+</html>

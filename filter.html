@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript filter method</h1>
+    <p id="demo"></p>
+
+    <script>
+
+        const numbers = [4, 8, 16, 19, 25, 32];
+
+        const even = numbers.filter((number)=>{
+            return number % 2 == 0;
+        })
+
+        document.getElementById("demo").innerHTML = even;
+
+        // const odd = numbers.filter((number)=>{
+        //     return number % 2 != 0;
+        // })
+
+        // document.getElementById("demo").innerHTML = odd;
+        
+    </script>
+
+</body>
+</html>

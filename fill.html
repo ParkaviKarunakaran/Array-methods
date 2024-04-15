@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript fill method</h1>
+    <p id="demo"></p>
+
+    <script>
+
+        const numbers = [ 30,42,57,24,63,78 ];
+        // const result = numbers.fill(100)
+
+        //syntax
+        //numbers.fill(value, startIndex, endIndex)
+
+        const result1 = numbers.fill(50, 2, 4)
+
+        document.getElementById("demo").innerHTML = result1;
+
+    </script>
+
+</body>
+</html>
